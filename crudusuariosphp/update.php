@@ -26,7 +26,7 @@ $row = mysqli_fetch_array($query);
 </head>
 <body>
 <div class="users-form">
-            <h1>Editar Usuario</h1>
+<p class="title">Edit User </p>
             <form action="edit_user.php" method="POST">
                 <input type="hidden" name="id" value="<?= $row['id'] ?>">
                 <input type="text" name="name" placeholder="Nombre" value="<?= $row['name'] ?>">

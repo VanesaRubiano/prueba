@@ -4,11 +4,6 @@
     padding: 0;
 }
 /* Utilizando el nombre del color */
-div {
-    background-color: #D9AFD9;
-background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-}
-
 html {
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
@@ -57,11 +52,11 @@ a{
     border-radius: 5px;
     background-color: white; 
     color: black; 
-    border: 2px solid #60a100;
+    border: 2px solid #2e2cbd;
 }
 
 .users-form form input[type=submit]:hover {
-    background-color: #60a100;
+    background-color: #341cb9;
     color: white;
 }
 
@@ -75,8 +70,8 @@ a{
 }
 
 table tr {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    background-color: #141414;
+    border: 1px solid #dddddd;
     padding: 4px;
 }
 
@@ -87,7 +82,7 @@ table th{
 }
 
 .users-table--edit{
-    background: #009688;
+    background: #1428e2;
     padding: 6px;
     color: #fff;
     text-align: center;
@@ -100,3 +95,266 @@ table th{
     text-align: center;
     font-weight: bold;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #faf6f6;
+
+}
+
+a{
+    text-decoration: none;
+    color: #3f3f3f;
+}
+a:hover{
+    text-decoration: none;
+    color: #ff6c3f;
+}
+
+.contenedor{
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 80px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.titulo{
+    font-weight: 300 ;
+    text-align: center;
+    margin: 60px 0 30px 0;
+    font-family: 'Lilita One', cursive;
+}
+.border{
+    border: none;
+    border-bottom: 5px;
+    border-top: 6px solid #7ed393;
+    background: none;
+    color: none;
+    border-radius: 30px;
+}
+
+.formulario{
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+
+.formulario .form-group{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"]{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: top;
+    border-radius: 20px;
+    background: rgba(166, 255, 113, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+    border: 1px solid rgba(166, 255, 113, 0.21);
+}
+
+
+.formulario .icono{
+    padding: 15px;
+    text-align: center;
+    width: 48px;
+    max-height: 48px;
+    font-size: 18px;
+    line-height: 18px;
+    display: inline-block;
+    color: rgb(54, 54, 54);
+    vertical-align: top;
+}
+
+
+.formulario .icono .izquierda {
+    margin-right: 4px;
+    border-radius: 3px 0 0 3px;
+    /* From https://css.glass */
+  
+}
+
+.formulario .usuario,
+.formulario.password{
+    border-radius: 0 3px 3px 0;
+}
+
+.formulario .password_btn{
+    width: calc(100% - 105px);
+}
+
+.formulario .error ul{
+    padding: 0 15px;
+}
+
+.formulario.error ul li{
+    margin-bottom: 10px;
+}
+
+
+.formulario .submit-btn{
+    padding: 15px;
+    text-align: center;
+    width: 48px;
+    font-size: 18px;
+    background:#ff846e;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+.texto-registrate{
+    text-align: center;
+    margin-top: 30px;
+}
+.texto{
+    text-align: center;
+}
+
+.texto-registrate-enlace{
+    text-decoration: none;
+    color: #7ed393;
+    font-size: 18px;
+    
+}
+
+.contenido article{
+    padding: 30px;
+}
+
+.contenido article p{
+    margin-bottom: 10px;
+    color: #3f3f3f;
+}
+
+
+/*HTML WEB SITE*/
+.paragraph
+{font-family: 'Jacques Francois', serif;
+    font-family: 'Playfair Display', serif;
+    text-justify: auto;}
+    .paragraph2
+    {   margin-top: 109px
+        font-family: 'Jacques Francois', serif;
+        font-family: 'Playfair Display', serif;
+        color:#141414;
+        text-justify: center;
+       
+        
+    }
+
+    .paragraph3
+    {
+        font-family: 'Caprasimo', cursive;
+        font-family: 'Jacques Francois', serif;
+        font-family: 'Playfair Display', serif;
+        color:#141414;
+        text-align: left;
+        margin-bottom: 20px
+    }
+    .title2
+
+    {margin-top: 109px
+        font-family: 'Jacques Francois', serif;
+        font-family: 'Playfair Display', serif;
+        color:#141414;
+        text-align: left;
+        color: black;
+    }
+
+
+
+.mynavbar{
+    background-color: #8dadad;
+background-image: linear-gradient(225deg, #8dadad 0%, #7a7abb 33%, #275073 66%, #07072d 100%);}
+.principal{color: white;}
+.second{color: white;}
+.text-justify{text-align: justify;
+
+
+}
+.paragraph
+{font-family: 'Jacques Francois', serif;
+    font-family: 'Playfair Display', serif;
+    
+}
+.paragraph{text-justify: auto;}
+
+.principal{
+    font-family: 'Dancing Script', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Playfair Display', serif;
+}
+.nav-item{
+    padding: 1px;
+    font-size: small
+    ;
+ 
+
+}
+.container{ 
+
+    width: 100%;
+    margin: auto 0;
+    color: white;
+    font-size: small;
+    text-align: left;
+
+}
+
+.semititles{font-family: 'Dancing Script', cursive;
+
+}
+
+/* Users Creation */
+
+.title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: center;
+    display: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;}
