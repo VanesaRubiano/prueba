@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Lilita+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
         <h1 class="titulo">
             Iniciar sesión
         </h1>
-        <a href="cerrar.php">Cerrar Sesion</a>
+    
         <hr class="border">
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" class="formulario" name="login" method="POST">
             <div class="form-group">
@@ -26,7 +26,7 @@
 
             <div class="form-group">
                 <i class="fa fa-lock icono izquierda" aria-hidden="true"></i>
-                <input type="password" name="password" class="password" placeholder="Repetir contraseña">
+                <input type="password" name="password" class="password" placeholder="Contraseña">
                 <i class="submit-btn fa fa-arrow-right" onclick="login.submit()"></i>
             </div>
             

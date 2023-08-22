@@ -3,17 +3,18 @@
     margin: 0;
     padding: 0;
 }
+
 /* Utilizando el nombre del color */
 html {
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.users-form form{
+.users-form form {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -22,36 +23,36 @@ a{
     text-align: center;
 }
 
-.users-form form input{
+.users-form form input {
     font-family: 'Segoe UI', sans-serif;
 }
 
 .users-form form input[type=text],
 .users-form form input[type=password],
-.users-form form input[type=email]{
+.users-form form input[type=email] {
     padding: 8px;
-    border:2px solid #aaa;
-    border-radius:4px;
-    outline:none;
-    transition:.3s;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    transition: .3s;
 }
 
 .users-form form input[type=text]:focus,
 .users-form form input[type=password]:focus,
-.users-form form input[type=password]:focus{
-    border-color:dodgerBlue;
-    box-shadow:0 0 6px 0 dodgerBlue;
+.users-form form input[type=password]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 6px 0 dodgerBlue;
 }
 
-.users-form form input[type=submit]{
+.users-form form input[type=submit] {
     border: none;
     padding: 12px 50px;
     text-decoration: none;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 5px;
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #2e2cbd;
 }
 
@@ -60,7 +61,7 @@ a{
     color: white;
 }
 
-.users-table table{
+.users-table table {
     border: 1px solid #ccc;
     border-collapse: collapse;
     margin: 0;
@@ -75,20 +76,21 @@ table tr {
     padding: 4px;
 }
 
-table th{
+table th {
     padding: 16px;
     text-align: center;
     font-size: .85em;
 }
 
-.users-table--edit{
+.users-table--edit {
     background: #1428e2;
     padding: 6px;
     color: #fff;
     text-align: center;
     font-weight: bold;
 }
-.users-table--delete{
+
+.users-table--delete {
     background: #b11e1e;
     padding: 6px;
     color: #fff;
@@ -96,7 +98,7 @@ table th{
     font-weight: bold;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -112,16 +114,17 @@ body {
 
 }
 
-a{
+a {
     text-decoration: none;
     color: #3f3f3f;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     color: #ff6c3f;
 }
 
-.contenedor{
+.contenedor {
     max-width: 500px;
     width: 90%;
     margin: auto;
@@ -135,16 +138,18 @@ a:hover{
     border-radius: 20px;
     padding: 40px;
     margin-top: 80px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.titulo{
-    font-weight: 300 ;
+.titulo {
+    font-weight: 300;
     text-align: center;
     margin: 60px 0 30px 0;
     font-family: 'Lilita One', cursive;
+    color: black;
 }
-.border{
+
+.border {
     border: none;
     border-bottom: 5px;
     border-top: 6px solid #7ed393;
@@ -153,19 +158,20 @@ a:hover{
     border-radius: 30px;
 }
 
-.formulario{
+.formulario {
     padding: 30px;
     margin-bottom: 30px;
 }
 
 
-.formulario .form-group{
+.formulario .form-group {
     width: 100%;
     margin-bottom: 10px;
 }
 
 .formulario input[type="text"],
-.formulario input[type="password"]{
+.formulario input[type="email"],
+.formulario input[type="password"] {
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -181,7 +187,7 @@ a:hover{
 }
 
 
-.formulario .icono{
+.formulario .icono {
     padding: 15px;
     text-align: center;
     width: 48px;
@@ -198,33 +204,38 @@ a:hover{
     margin-right: 4px;
     border-radius: 3px 0 0 3px;
     /* From https://css.glass */
-  
+
 }
 
 .formulario .usuario,
-.formulario.password{
+.formulario.password {
     border-radius: 0 3px 3px 0;
 }
 
-.formulario .password_btn{
+.formulario .password_btn {
     width: calc(100% - 105px);
 }
 
-.formulario .error ul{
+.formulario .error{
+    color: red;
+
+}
+
+.formulario .error ul {
     padding: 0 15px;
 }
 
-.formulario.error ul li{
+.formulario.error ul li {
     margin-bottom: 10px;
 }
 
 
-.formulario .submit-btn{
+.formulario .submit-btn {
     padding: 15px;
     text-align: center;
     width: 48px;
     font-size: 18px;
-    background:#ff846e;
+    background: #ff846e;
     display: inline-block;
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -232,108 +243,113 @@ a:hover{
 }
 
 
-.texto-registrate{
+.texto-registrate {
     text-align: center;
     margin-top: 30px;
 }
-.texto{
+
+.texto {
     text-align: center;
 }
 
-.texto-registrate-enlace{
+.texto-registrate-enlace {
     text-decoration: none;
     color: #7ed393;
     font-size: 18px;
-    
+
 }
 
-.contenido article{
+.contenido article {
     padding: 30px;
 }
 
-.contenido article p{
+.contenido article p {
     margin-bottom: 10px;
     color: #3f3f3f;
 }
 
 
 /*HTML WEB SITE*/
-.paragraph
-{font-family: 'Jacques Francois', serif;
+.paragraph {
+    font-family: 'Jacques Francois', serif;
     font-family: 'Playfair Display', serif;
-    text-justify: auto;}
-    .paragraph2
-    {   margin-top: 109px
-        font-family: 'Jacques Francois', serif;
-        font-family: 'Playfair Display', serif;
-        color:#141414;
-        text-justify: center;
-       
-        
-    }
+    text-justify: auto;
+}
 
-    .paragraph3
-    {
-        font-family: 'Caprasimo', cursive;
-        font-family: 'Jacques Francois', serif;
-        font-family: 'Playfair Display', serif;
-        color:#141414;
-        text-align: left;
-        margin-bottom: 20px
-    }
-    .title2
+.paragraph2 {
+    margin-top: 109px font-family: 'Jacques Francois', serif;
+    font-family: 'Playfair Display', serif;
+    color: #141414;
+    text-justify: center;
+}
 
-    {margin-top: 109px
-        font-family: 'Jacques Francois', serif;
-        font-family: 'Playfair Display', serif;
-        color:#141414;
-        text-align: left;
-        color: black;
-    }
+.paragraph3 {
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Jacques Francois', serif;
+    font-family: 'Playfair Display', serif;
+    color: #141414;
+    text-align: left;
+    margin-bottom: 20px
+}
 
+.title2 {
+    margin-top: 109px font-family: 'Jacques Francois', serif;
+    font-family: 'Playfair Display', serif;
+    color: #141414;
+    text-align: left;
+    color: black;
+}
 
-
-.mynavbar{
+.mynavbar {
     background-color: #8dadad;
-background-image: linear-gradient(225deg, #8dadad 0%, #7a7abb 33%, #275073 66%, #07072d 100%);}
-.principal{color: white;}
-.second{color: white;}
-.text-justify{text-align: justify;
+    background-image: linear-gradient(225deg, #8dadad 0%, #7a7abb 33%, #275073 66%, #07072d 100%);
+}
+
+.principal {
+    color: white;
+}
+
+.second {
+    color: white;
+}
+
+.text-justify {
+    text-align: justify;
 
 
 }
-.paragraph
-{font-family: 'Jacques Francois', serif;
+
+.paragraph {
+    font-family: 'Jacques Francois', serif;
     font-family: 'Playfair Display', serif;
-    
 }
-.paragraph{text-justify: auto;}
 
-.principal{
+.paragraph {
+    text-justify: auto;
+}
+
+.principal {
     font-family: 'Dancing Script', cursive;
-font-family: 'EB Garamond', serif;
-font-family: 'Libre Baskerville', serif;
-font-family: 'Playfair Display', serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Playfair Display', serif;
 }
-.nav-item{
+
+.nav-item {
     padding: 1px;
-    font-size: small
-    ;
- 
-
+    font-size: small;
 }
-.container{ 
 
-    width: 100%;
-    margin: auto 0;
+.container {
+    /* width: 100%; */
+    /* margin: auto 70px, 3px; */
     color: white;
     font-size: small;
     text-align: left;
-
 }
 
-.semititles{font-family: 'Dancing Script', cursive;
-
+.semititles {
+    font-family: 'Dancing Script', cursive;
 }
 
 /* Users Creation */
@@ -357,4 +373,25 @@ font-family: 'Playfair Display', serif;
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
-    transform: .3s ease;}
+    transform: .3s ease;
+}
+
+.prueba {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#div-logout{
+    text-align: right;
+    margin: 30px;
+    
+}
+
+.btn-logout{
+    background: #e23314;
+    padding: 6px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}

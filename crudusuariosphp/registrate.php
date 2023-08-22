@@ -11,24 +11,24 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);
     $password = $_POST['password'];
     $password2 = $_POST['password2'];
-
-    echo "$usuario . $password . $password2";
-
+    $name = $_POST['name'];
+    $lastname = $_POST['lastname'];
+    $email = $_POST['email'];
 
     $errores = '';
 
 
-    if(empty($usuario) or empty($password) or empty($password2)){
+    if(empty($usuario) or empty($password) or empty ($name) or empty ($lastname) or empty ($email) or empty($password2)){
         $errores .= '<li>Por favor rellena todos los datos correctamente</li>';
     }else{
         try{
-            $conexion = new PDO('mysql:host=localhost;dbname=login_prueba1', 'root', '');
+            $conexion = new PDO('mysql:host=localhost;dbname=grupo2_entregable', 'root', '');
         }catch(PDOException $e){
             echo "Error: " . $e->getMessage();
         }
 
 
-        $statement = $conexion->prepare('SELECT * FROM usuarios WHERE usuario = :usuario LIMIT 1');
+        $statement = $conexion->prepare('SELECT * FROM users WHERE username = :usuario LIMIT 1');
         $statement->execute(array(':usuario' => $usuario));
         $resultado = $statement->fetch();
 
@@ -46,8 +46,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
     
     if($errores == ''){
-        $statement = $conexion->prepare('INSERT INTO usuarios (id, usuario, pass) VALUES (null, :usuario, :pass)');
-        $statement->execute(array(':usuario' => $usuario, ':pass' => $password));
+        $statement = $conexion->prepare('INSERT INTO users (id, username, password, name, lastname, email) VALUES (null, :usuario, :pass, :name, :lastname, :email)');
+        $statement->execute(array(':usuario' => $usuario, ':pass' => $password, ':name' => $name, ':lastname' => $lastname, ':email' => $email)); 
 
 
         header('Location: login.php');
